@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use(jobRoutes);
 
-mongoose.connect("mongodb://autorack.proxy.rlwy.net:11058")
+mongoose.connect("mongodb://localhost:27017/paralect")
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
